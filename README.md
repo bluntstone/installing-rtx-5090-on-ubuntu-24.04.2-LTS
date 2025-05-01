@@ -16,7 +16,6 @@ Date: May 1
 fresh install of ubuntu-24.04.2 LTS Server with ssh server installed to ssh into the machine
 
 #update the system
-
 sudo apt update
 
 sudo apt upgrade
