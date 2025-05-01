@@ -16,6 +16,7 @@ Date: May 1
 fresh install of ubuntu-24.04.2 LTS Server with ssh server installed to ssh into the machine
 
 #update the system
+
 sudo apt update
 
 sudo apt upgrade
@@ -74,39 +75,72 @@ sudo reboot
 #check driver
 
 nvidia-smi
+
+
 Thu May  1 16:53:52 2025       
+
 +-----------------------------------------------------------------------------------------+
+
 | NVIDIA-SMI 570.144                Driver Version: 570.144        CUDA Version: 12.8     |
+
 |-----------------------------------------+------------------------+----------------------+
+
 | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+
 | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+
 |                                         |                        |               MIG M. |
+
 |=========================================+========================+======================|
+
 |   0  NVIDIA GeForce RTX 5090        Off |   00000000:01:00.0 Off |                  N/A |
+
 | 35%   28C    P0             67W /  600W |       0MiB /  32607MiB |      0%      Default |
+
 |                                         |                        |                  N/A |
+
 +-----------------------------------------+------------------------+----------------------+
+
                                                                                          
+
 +-----------------------------------------------------------------------------------------+
+
 | Processes:                                                                              |
+
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+
 |        ID   ID                                                               Usage      |
+
 |=========================================================================================|
+
 |  No running processes found                                                             |
+
 +-----------------------------------------------------------------------------------------+
 
 #now lets install ComfyUI
+
 sudo apt install python3.12-venv
+
 git clone https://github.com/comfyanonymous/ComfyUI.git
+
 cd ComfyUI/
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -U pip setuptools wheel
+
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
 pip install -r requirements.txt
+
 cd custom_nodes/
+
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+
 cd ..
+
 python main.py --listen #start up comfyui
 
 
