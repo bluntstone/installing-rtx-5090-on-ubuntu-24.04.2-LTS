@@ -60,6 +60,7 @@ sudo update-alternatives --config gcc #select the gcc 14
 
 #confirm
 gcc --version
+
 sudo reboot # tried to compile without a reboot and it failed, rebooted and it worked 
 
 #download the nvidia driver
@@ -74,10 +75,7 @@ sudo reboot
 
 #check driver
 
-nvidia-smi
-
-
-Thu May  1 16:53:52 2025       
+nvidia-smi    
 
 | NVIDIA-SMI 570.144                Driver Version: 570.144        CUDA Version: 12.8     |
 
