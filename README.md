@@ -1,4 +1,4 @@
-# installing-rtx-5090-on-ubuntu-24.04.2-LTS
+installing-rtx-5090-on-ubuntu-24.04.2-LTS
 Hopefully it will just work with the default nvidia-driver soon
 Commands for installing an rtx 5090 on Ubuntu 24.04.2 LTS as of May 1 2025
 I only did this one time hoping I got everything right. There maybe a much easier way to do this. I followed a youtube video 
@@ -9,12 +9,12 @@ link: https://www.youtube.com/watch?v=o5deOXLDpZw&t=391s
 
 Date: May 1
 fresh install of ubuntu-24.04.2 LTS Server with ssh server installed to ssh into the machine
-#update the system
+update the system
 sudo apt update
 sudo apt upgrade
 sudo apt reboot
 
-# install mainline kernel
+install mainline kernel
 sudo add-apt-repository ppa:cappelikan
 sudo apt update && sudo apt full-upgrade
 sudo apt install -y mainline
@@ -24,9 +24,9 @@ sudo mainline install 6.14.4 # choose the latest version
 sudo apt install linux-headers-$(uname -r) #make sure its all here
 sudo reboot 
 
-#confirm kernel install 
+confirm kernel install 
 uname -a
-# Linux 5090 6.14.4-061404-generic #202504251003 SMP PREEMPT_DYNAMIC Fri Apr 25 12:15:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Linux 5090 6.14.4-061404-generic #202504251003 SMP PREEMPT_DYNAMIC Fri Apr 25 12:15:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 
 sudo apt install build-essential
 sudo apt install gcc-14
