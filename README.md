@@ -1,3 +1,7 @@
+This is already outdate. but can be used if you want to download and compile the nvidea driver
+
+At present the ubuntu nvidia-driver-server-open works fine version 570
+
 installing-rtx-5090-on-ubuntu-24.04.2-LTS
 
 Hopefully it will just work with the default nvidia-driver soon
