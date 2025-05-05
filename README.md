@@ -1,6 +1,6 @@
 This is already outdate. but can be used if you want to download and compile the nvidea driver
 
-At present the ubuntu nvidia-driver-server-open works fine version 570 on Ubuntu 24.04.2 LTS. Only issue using a few more watts and the fans are on all the time. 
+At present the ubuntu nvidia-driver-server-open works fine version 570 on Ubuntu 24.04.2 LTS right out of the box. Only issue using a few more watts and the fans are on all the time. 
 
 installing-rtx-5090-on-ubuntu-24.04.2-LTS
 
